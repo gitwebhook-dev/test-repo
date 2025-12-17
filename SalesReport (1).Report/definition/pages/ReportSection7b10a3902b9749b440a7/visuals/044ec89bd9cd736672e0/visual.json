@@ -1,0 +1,42 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "044ec89bd9cd736672e0",
+  "position": {
+    "x": 716.41791044776119,
+    "y": 0,
+    "z": 39000,
+    "height": 54.447761194029852,
+    "width": 299.46268656716421,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Category"
+                        }
+                      },
+                      "Property": "Category"
+                    }
+                  },
+                  "Function": 3
+                }
+              },
+              "queryRef": "Min(Category.Category)",
+              "nativeQueryRef": "First Category"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
